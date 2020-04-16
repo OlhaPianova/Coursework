@@ -1,0 +1,5 @@
+﻿  Source.cpp
+  Distance_Learning.cpp
+  Создание кода...
+Source.obj : error LNK2005: "class std::list<struct Info,class std::allocator<struct Info> > listStudents" (?listStudents@@3V?$list@UInfo@@V?$allocator@UInfo@@@std@@@std@@A) уже определен в Distance_Learning.obj
+C:\Users\User\Documents\Visual Studio 2015\Курсова1\Debug\Курсова1.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более
