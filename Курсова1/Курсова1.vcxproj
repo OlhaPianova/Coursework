@@ -116,6 +116,10 @@
   <ItemGroup>
     <ClInclude Include="Distance_Learning.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="admins.txt" />
+    <Text Include="students.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

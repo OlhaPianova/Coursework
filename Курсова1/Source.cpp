@@ -2,8 +2,12 @@
 #include<iostream>
 #include<string>
 using namespace std;
-#define CLEAR system("ctl");
+#define CLEAR system("cls");
+
 int main() {
+	initAdmins();
+	initStudents();
+
 	Info* arrStudents;
 	
 	int Entrance = 0;
@@ -13,48 +17,39 @@ int main() {
 	do {
 		cout << "\n\n\t\t\tPlease select:" << endl;
 		cout << "\n\t\t\t1 - LOG IN \n\n\t\t\t2 - GET REGISTERED " << endl;
-		cout << "3 - login as admin " << endl;
+		cout << "\n\n\n\t\t\t0 - login or registration as admin " << endl;
 		cin >> Entrance;
 		switch (Entrance) {
 		case 1: {
-			login();
+			CLEAR;
+			login_student();
 			do {
 				CLEAR;
-				cout << "1) English" << endl;
-				cout << "2) Mathematics" << endl;
-				cout << "3) Art" << endl;
-				cout << "4) Ukrainian language" << endl;
-				cout << "5) I am exploring the world" << endl;
-				cout << "6) My marks" << endl;
-				cout << "7) Exit" << endl;
+				main_menu();
 				cout << "\nSelect action:_ " << endl;
 				cin >> action;
 				switch (action) {
 				case 1: {
-					while (categoryItem != 5) {
+					while (categoryItem != 4) {
+						CLEAR;
 						cout << "\t\t\tEnglish" << endl;
-						cout << "\n1. Theory" << endl;
-						cout << "2. Homework" << endl;
-						cout << "3. Training test" << endl;
-						cout << "4. Control test" << endl;
-						cout << "5. back to main menu" << endl;
-
+						category_menu();
 						cout << "Enter category item: " << endl;
 						cin >> categoryItem;
 						switch (categoryItem) {
 						case 1: {
-							//Theory
+							CLEAR;
+							//Theory and Homework
 						}break;
 						case 2: {
-							//Homework
-						}break;
-						case 3: {
+							CLEAR;
 							//Training test
 						}break;
-						case 4: {
+						case 3: {
+							CLEAR;
 							//Control test
 						}break;
-						case 5: {
+						case 4: {
 							break;
 						}
 
@@ -62,19 +57,24 @@ int main() {
 					}
 				}break;
 				case 2: {
-				//Mathematics
+					CLEAR;
+					//Mathematics
 				}break;
 				case 3: {
-				//Art
+					CLEAR;
+					//Art
 				}break;
 				case 4: {
-				//Ukrainian language
+					CLEAR;
+					//Ukrainian language
 				}break;
 				case 5: {
-				//I am exploring the world
+					CLEAR;
+					//I am exploring the world
 				}break;
 				case 6: {
-				//My marks
+					CLEAR;
+					//My marks
 				}break;
 				case 7: {
 					CLEAR;
@@ -88,10 +88,62 @@ int main() {
 		case 2: {
 			Add_Student();
 		}break;
-		case 3: {
-			login_Admin();
+		case 0: {
+			CLEAR;
+			int ansverLogAdmin = 0;
+			cout << "\n\t\t\t1. Log in" << endl;
+			cout << "\n\t\t\t2. Registration" << endl;
+			cin >> ansverLogAdmin;
+			if (ansverLogAdmin==1) {
+				login_Admin();
+				do {
+					CLEAR;
+					main_menu();
+					cout << "\nSelect action:_ " << endl;
+					cin >> action;
+					switch (action) {
+					case 1: {
+						CLEAR;
+						cout << "\t\t\tEnglish" << endl;
+						category_menu();
+					}break;
+					case 2: {
+						CLEAR;
+						cout << "\t\t\tMathematics" << endl;
+						category_menu();
+					}break;
+					case 3: {
+						CLEAR;
+						cout << "\t\t\tArt" << endl;
+						category_menu();
+					}break;
+					case 4: {
+						CLEAR;
+						cout << "\t\t\tUkrainian language" << endl;
+						category_menu();
+					}break;
+					case 5: {
+						CLEAR;
+						cout << "\t\t\tI am exploring the world" << endl;
+						category_menu();
+					}break;
+					case 6: {
+						CLEAR;
+						cout << "\marks" << endl;
+					}break;
+					case 7: {
+						break;
+					}
+					}
+				} while (action != 7);
+			}
+			else if (ansverLogAdmin == 2) {
+				addAdmin();
+			}
+			
 		}break;
 		case 4: {
+			CLEAR;
 			cout << "Goodbye!" << endl;
 			break;
 		}
@@ -99,13 +151,6 @@ int main() {
 		
 	} while (Entrance!=4);
 				
-		
-	
-	
-
-
-
-
 
 	system("pause");
 		return 0;

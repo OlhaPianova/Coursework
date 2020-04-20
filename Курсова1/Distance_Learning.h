@@ -1,6 +1,5 @@
 #pragma once
 #include<string>
-#include<list>
 using namespace std;
 
 struct Info {
@@ -19,23 +18,46 @@ struct Admin {
 	string LoginAdmin;
 	string PasswordAdmin;
 };
+struct Questions
+{
+	string question;
+	string answer;
+};
+
+struct Test
+{
+	string testName;
+	Questions* description;
+	int questionNumb;
+
+};
+struct task {
+	string theme;
+	int paragraphNumb;
+	int pageNumb;
+	int exercise;
+
+};
 struct Category {
-	list<string> theory;
-	list<string> homework;
-	list<string> trainingTest;
-	list<string> controlTest;
+	string categoryName;
+	int countLessons;
+	task* theory;
+	task* homework;
+	Test* trainingTest;
+	Test* controlTest;
 };
-struct Subjects {
-	Category English_language;
-	Category Mathematics;
-	string Art;
-	Category Ukrainian_language;
-	Category World;
-};
-void login();
+
+void main_menu();
+void category_menu();
+
 void login_Admin();
+void insertAdmins(Admin admin);
+void initAdmins();
 void addAdmin();
+
+void login_student();
 void insertStudents(Info stud);
-void init();
+void initStudents();
 void Add_Student();
 
+void addNewLesson();

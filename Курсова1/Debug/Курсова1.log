@@ -1,5 +1,6 @@
 ﻿  Source.cpp
-  Distance_Learning.cpp
-  Создание кода...
-Source.obj : error LNK2005: "class std::list<struct Info,class std::allocator<struct Info> > listStudents" (?listStudents@@3V?$list@UInfo@@V?$allocator@UInfo@@@std@@@std@@A) уже определен в Distance_Learning.obj
-C:\Users\User\Documents\Visual Studio 2015\Курсова1\Debug\Курсова1.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более
+c:\users\user\documents\visual studio 2015\курсова1\курсова1\source.cpp(136): warning C4129: m: неизвестная escape-последовательность
+c:\users\user\documents\visual studio 2015\курсова1\курсова1\source.cpp(16): warning C4101: countStudents: неиспользованная локальная переменная
+c:\users\user\documents\visual studio 2015\курсова1\курсова1\source.cpp(11): warning C4101: arrStudents: неиспользованная локальная переменная
+  Курсова1.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Курсова1\Debug\Курсова1.exe
+  Курсова1.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Курсова1\Debug\Курсова1.pdb (Partial PDB)
