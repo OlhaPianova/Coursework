@@ -2,15 +2,23 @@
 #include<string>
 using namespace std;
 
-struct Info {
+struct Mark {
+	string  subject;
+	string typeMark;
+	int mark;
+};
+struct MarkInfo{
 	int ID;
+	Mark* marks;
+};
+struct Info {
+	int studID;
 	string name;
 	string surname;
 	string email;
 	string login;
 	string password;
-	int* Marks;
-	float Seredniy_bal;
+	
 };
 struct Admin {
 	string AdminName;
@@ -18,46 +26,74 @@ struct Admin {
 	string LoginAdmin;
 	string PasswordAdmin;
 };
-struct Questions
-{
+
+struct Questions{
 	string question;
-	string answer;
+	string rightAnswer;
+	string fourOption[4];
 };
 
-struct Test
-{
+struct Test{
+	string categoryName;
 	string testName;
-	Questions* description;
-	int questionNumb;
-
+	string tipe;
+	Questions description[6];
+	
 };
 struct task {
+	string CategoryName;
+	string taskType;
 	string theme;
-	int paragraphNumb;
-	int pageNumb;
-	int exercise;
-
+	string paragraphNumb;
+	string pageNumb;
+	string exercise;
 };
-struct Category {
-	string categoryName;
-	int countLessons;
-	task* theory;
-	task* homework;
-	Test* trainingTest;
-	Test* controlTest;
-};
-
+void adminMenu();
 void main_menu();
-void category_menu();
+void work_menu();
+void lessonMenu();
+void testMenu();
 
-void login_Admin();
+
 void insertAdmins(Admin admin);
 void initAdmins();
 void addAdmin();
 
+void search_by_surname();
+
+void insertMarks(MarkInfo mark);
+void addMark();
+void initMarks();
+void showMarks();
+
 void login_student();
+void passwordStudent();
 void insertStudents(Info stud);
 void initStudents();
 void Add_Student();
+void showStudent();
+void editStudent();
 
+void insertLesson(task lesson);
+void initLesson();
 void addNewLesson();
+
+void showMathsTheory();
+void showEnglishTheory();
+void showUkrainianlanguageTheory();
+void showExploring_worldTheory();
+
+void showMathsHomework();
+void showEnglishHomework();
+void showUkrainianlanguageHomework();
+void showExploring_worldHomework();
+
+void initTest();
+void addTest();
+void insertTest(Test test);
+void passTest();
+
+void showMathsTrainingTests();
+void showMathsControlTests();
+void showExploring_worldTrainingTests();
+void showExploring_worldControlTests();

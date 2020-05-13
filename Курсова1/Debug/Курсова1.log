@@ -1,6 +1,6 @@
-﻿  Source.cpp
-c:\users\user\documents\visual studio 2015\курсова1\курсова1\source.cpp(136): warning C4129: m: неизвестная escape-последовательность
-c:\users\user\documents\visual studio 2015\курсова1\курсова1\source.cpp(16): warning C4101: countStudents: неиспользованная локальная переменная
-c:\users\user\documents\visual studio 2015\курсова1\курсова1\source.cpp(11): warning C4101: arrStudents: неиспользованная локальная переменная
+﻿  Distance_Learning.cpp
+c:\users\user\documents\visual studio 2015\курсова1\курсова1\distance_learning.cpp(262): warning C4553: ==: оператор не имеет результата; возможно, имелся в виду "="
+c:\users\user\documents\visual studio 2015\курсова1\курсова1\distance_learning.cpp(265): warning C4553: ==: оператор не имеет результата; возможно, имелся в виду "="
+c:\users\user\documents\visual studio 2015\курсова1\курсова1\distance_learning.cpp(725): warning C4129: Y: неизвестная escape-последовательность
   Курсова1.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Курсова1\Debug\Курсова1.exe
   Курсова1.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Курсова1\Debug\Курсова1.pdb (Partial PDB)

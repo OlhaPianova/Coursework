@@ -15,11 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
     <ClCompile Include="Distance_Learning.cpp">
       <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,5 +29,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="admins.txt" />
+    <Text Include="students.txt" />
+    <Text Include="tests.txt" />
+    <Text Include="lessons.txt" />
+    <Text Include="marks.txt" />
   </ItemGroup>
 </Project>

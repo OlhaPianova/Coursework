@@ -118,7 +118,10 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="admins.txt" />
+    <Text Include="lessons.txt" />
+    <Text Include="marks.txt" />
     <Text Include="students.txt" />
+    <Text Include="tests.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
